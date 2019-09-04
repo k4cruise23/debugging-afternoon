@@ -13,7 +13,8 @@ class ShoppingCart extends Component {
             <div className="shopping-cart-button-container">
               <button
                 className="shopping-cart-button"
-                onClick={() => this.props.removeFromCart}
+                //a function always has to be invoked for it to work and to pass down props.
+                onClick={() => this.props.removeFromCart()}
               >
                 Remove From Shopping Cart
               </button>
